@@ -1,8 +1,16 @@
 
-let plusButtton = document.querySelector(".plus-icon")
-let answer = document.querySelector(".answer")
+const faqs = document.querySelectorAll(".faq-info")
+const img = document.querySelectorAll(".plus-icon")
 
-plusButtton.addEventListener("click", ()=>{
-   
-    
+faqs.forEach(faq => {
+    faq.addEventListener("click", ()=>{
+        faq.classList.toggle("active")
+    })
+})
+
+img.forEach(img =>{
+    img.addEventListener("click",()=>{
+    //    img.src= '/assets/images/icon-minus.svg'
+        img.classList.toggle("active")
+    })
 })

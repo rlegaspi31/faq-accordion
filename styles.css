@@ -83,6 +83,19 @@ body{
     cursor: pointer;
 }
 
-.faq-container .answer{
-    display: none;
+.question img.active{
+    content: url(/assets/images/icon-minus.svg);
 }
+
+.faq-container .answer{
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.5s ease-out; */
+}
+
+.faq-info.active .answer{
+    max-height: 300px;
+    padding-bottom: 15px;
+    transition: max-height 1.4s;
+}
+

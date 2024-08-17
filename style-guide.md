@@ -7,6 +7,14 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
+/* Large desktop */ @media (min-width: 1200px) { ... }
+
+/* Portrait tablet to landscape and desktop */ @media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Landscape phone to portrait tablet */ @media (max-width: 767px) { ... }
+
+/* Landscape phones and down */ @media (max-width: 480px) { ... }
+
 > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
 
 ## Colors
